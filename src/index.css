@@ -2,47 +2,57 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@200..800&display=swap");
 
 @theme {
-
   /*COLORS -----------------------------------------------------------------------------------------------*/
 
   /* Backgrounds */
-  --color-ivory: #FAF8F3;
-  --color-linen: #F4F0E8;
-  --color-sand: #ECE6DB;
-  --color-surface: #FFFCF8;
+  --color-ivory: #faf8f3;
+  --color-linen: #f4f0e8;
+  --color-sand: #ece6db;
+  --color-surface: #fffcf8;
 
   /* Olive */
-  --color-olive-100: #B9C2A5;
-  --color-olive-300: #98A884;
-  --color-olive-500: #7A8B68;
+  --color-olive-100: #b9c2a5;
+  --color-olive-300: #98a884;
+  --color-olive-500: #7a8b68;
   --color-olive-700: #667553;
-  --color-olive-900: #4B5640;
+  --color-olive-900: #4b5640;
 
   /* Rose */
-  --color-rose-100: #F1DDD8;
-  --color-rose-300: #E9C9C5;
-  --color-rose-500: #D6A09A;
-  --color-rose-700: #BC7F79;
-  --color-rose-900: #965D57;
+  --color-rose-100: #f1ddd8;
+  --color-rose-300: #e9c9c5;
+  --color-rose-500: #d6a09a;
+  --color-rose-700: #bc7f79;
+  --color-rose-900: #965d57;
 
   /* Gold */
-  --color-gold-300: #D8C08A;
-  --color-gold-500: #C7A86D;
-  --color-gold-700: #A9854F;
+  --color-gold-300: #d8c08a;
+  --color-gold-500: #c7a86d;
+  --color-gold-700: #a9854f;
 
   /* Text */
-  --color-heading: #2F2D29;
-  --color-body: #5E5A53;
-  --color-muted: #8E887F;
+  --color-heading: #2f2d29;
+  --color-body: #5e5a53;
+  --color-muted: #8e887f;
 
   /* Borders */
-  --color-border: #DDD6CC;
+  --color-border: #ddd6cc;
 
   /*TYPOGRAPHY ------------------------------------------------------------------------------------------------*/
 
   --font-heading: "DM Serif Display", serif;
   --font-body: "Manrope", sans-serif;
 
+  /*BORDER RAD. ----------------------------------------------------------------------------------------------*/
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  /*SHADOWS --------------------------------------------------------------------------------------------------*/
+  --shadow-soft: 0 8px 24px rgba(47, 45, 41, 0.08);
+  --shadow-medium: 0 18px 40px rgba(47, 45, 41, 0.1);
+  --shadow-large: 0 28px 70px rgba(47, 45, 41, 0.12);
 }
 
 /*Globals -----------------------------------------------------------------------------------------------------*/
@@ -58,4 +68,22 @@ body {
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+p {
+  line-height: 1.7;
 }
