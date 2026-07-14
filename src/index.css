@@ -87,3 +87,25 @@ h6 {
 p {
   line-height: 1.7;
 }
+
+::selection {
+  background: var(--color-olive-300);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-linen);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-olive-300);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-olive-500);
+}
