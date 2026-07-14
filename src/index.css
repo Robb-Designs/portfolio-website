@@ -1,1 +1,61 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@200..800&display=swap");
+
+@theme {
+
+  /*COLORS -----------------------------------------------------------------------------------------------*/
+
+  /* Backgrounds */
+  --color-ivory: #FAF8F3;
+  --color-linen: #F4F0E8;
+  --color-sand: #ECE6DB;
+  --color-surface: #FFFCF8;
+
+  /* Olive */
+  --color-olive-100: #B9C2A5;
+  --color-olive-300: #98A884;
+  --color-olive-500: #7A8B68;
+  --color-olive-700: #667553;
+  --color-olive-900: #4B5640;
+
+  /* Rose */
+  --color-rose-100: #F1DDD8;
+  --color-rose-300: #E9C9C5;
+  --color-rose-500: #D6A09A;
+  --color-rose-700: #BC7F79;
+  --color-rose-900: #965D57;
+
+  /* Gold */
+  --color-gold-300: #D8C08A;
+  --color-gold-500: #C7A86D;
+  --color-gold-700: #A9854F;
+
+  /* Text */
+  --color-heading: #2F2D29;
+  --color-body: #5E5A53;
+  --color-muted: #8E887F;
+
+  /* Borders */
+  --color-border: #DDD6CC;
+
+  /*TYPOGRAPHY ------------------------------------------------------------------------------------------------*/
+
+  --font-heading: "DM Serif Display", serif;
+  --font-body: "Manrope", sans-serif;
+
+}
+
+/*Globals -----------------------------------------------------------------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-body);
+  font-family: var(--font-body);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
