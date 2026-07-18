@@ -10,14 +10,14 @@ function Navbar({ className = "", ...props }) {
           className={`flex justify-between items-center py-4 ${className}`}
           {...props}
         >
-          <a href="#" className="hover:text-olive-700 ease-in duration-300">
+          <a href="#hero" className="transition-colors duration-300 hover:text-olive-700">
             Robb.Dev
           </a>
 
           <div className="flex gap-14">
             {navLinks.map((link) => {
               return (
-                <a key={link.href} href={link.href}>
+                <a className="transition-colors duration-300 hover:text-olive-700" key={link.href} href={link.href}>
                   {link.label}
                 </a>
               );
