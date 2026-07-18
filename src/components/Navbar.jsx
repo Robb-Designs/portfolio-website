@@ -1,20 +1,6 @@
-import Button from "./ui/Button.jsx";
+import navLinks from "../data/navLinks.js";
+import socialLinks from "../data/socialLinks.js";
 import Container from "./layout/Container.jsx";
-
-const navLinks = [
-  {
-    label: "About",
-    href: "#about",
-  },
-  {
-    label: "Projects",
-    href: "#projects",
-  },
-  {
-    label: "Experience",
-    href: "#experience",
-  },
-];
 
 function Navbar({ className = "", ...props }) {
   return (
@@ -24,9 +10,11 @@ function Navbar({ className = "", ...props }) {
           className={`flex justify-between items-center py-4 ${className}`}
           {...props}
         >
-          <a href="#" >Robb.Dev</a>
+          <a href="#" className="hover:text-olive-700 ease-in duration-300">
+            Robb.Dev
+          </a>
 
-          <div className= "flex gap-8">
+          <div className="flex gap-14">
             {navLinks.map((link) => {
               return (
                 <a key={link.href} href={link.href}>
@@ -36,7 +24,17 @@ function Navbar({ className = "", ...props }) {
             })}
           </div>
 
-          <Button variant="primary">Get in Touch</Button>
+          <div className="flex items-center gap-5">
+            {socialLinks.map((link) => {
+              const Icon = link.icon;
+
+              return (
+                <a key={link.label} href={link.href} aria-label={link.label} target="_blank" rel="noopener noreferrer">
+                  <Icon size={20}/>
+                </a>
+              );
+            })}
+          </div>
         </nav>
       </Container>
     </header>
