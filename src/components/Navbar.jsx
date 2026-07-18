@@ -10,14 +10,14 @@ function Navbar({ className = "", ...props }) {
           className={`flex justify-between items-center py-4 ${className}`}
           {...props}
         >
-          <a href="#hero" className="transition-colors duration-300 hover:text-olive-700">
+          <a href="#hero" className="transition-colors duration-300 hover:text-rose-700 hover:underline-offset-1">
             Robb.Dev
           </a>
 
           <div className="flex gap-14">
             {navLinks.map((link) => {
               return (
-                <a className="transition-colors duration-300 hover:text-olive-700" key={link.href} href={link.href}>
+                <a className="transition-colors duration-300 hover:text-rose-700 hover:underline-offset-1" key={link.href} href={link.href}>
                   {link.label}
                 </a>
               );
@@ -29,7 +29,7 @@ function Navbar({ className = "", ...props }) {
               const Icon = link.icon;
 
               return (
-                <a key={link.label} href={link.href} aria-label={link.label} target="_blank" rel="noopener noreferrer">
+                <a  className="transition-colors duration-300 hover:text-rose-700" key={link.label} href={link.href} aria-label={link.label} target="_blank" rel="noopener noreferrer">
                   <Icon size={20}/>
                 </a>
               );
