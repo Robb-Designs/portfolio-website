@@ -1,15 +1,16 @@
-import { Github, Linkedin, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const socialLinks = [
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/robert-lee-dev/",
-    icon: Linkedin,
+    icon: FaLinkedin,
   },
   {
     label: "GitHub",
     href: "https://github.com/Robb-Designs",
-    icon: Github,
+    icon: FaGithub,
   },
   {
     label: "Resume",
