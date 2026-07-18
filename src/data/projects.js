@@ -10,7 +10,7 @@ const projects = [
     technologies: [],
     repository: "",
     website: "",
-    image: []
+    images: []
   },
   {
     id: 2,
@@ -23,6 +23,9 @@ const projects = [
     technologies: [],
     repository: "",
     website: "",
-    image: []
+    images: []
   },
 ];
+
+
+export default projects;
